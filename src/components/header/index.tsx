@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { PATH } from '@/constant/path';
+import { PATH } from '@/constants/path';
 
 function Header() {
   return (
