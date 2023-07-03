@@ -1,4 +1,4 @@
 function Reducer() {
-  return <></>;
+  return <div></div>;
 }
 export default Reducer;
