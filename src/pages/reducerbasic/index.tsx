@@ -6,7 +6,9 @@ dispatch : state 업데이트를 위한 요구
 action : 요구의 내용
 */
 
-type BankAction = { type: 'deposit'; payload: number } | { type: 'withdraw'; payload: number };
+type BankActionType = 'deposit' | 'withdraw';
+
+type BankAction = { type: BankActionType; payload: number };
 
 const reducer: Reducer<number, BankAction> = (state, action) => {
   switch (action.type) {
