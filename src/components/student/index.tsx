@@ -1,9 +1,21 @@
-function Student({ name }: { name: string }) {
+import { Dispatch } from 'react';
+
+import { studentAction } from '@/pages/reducer';
+
+function Student({
+  name,
+  dispatch,
+  id,
+}: {
+  name: string;
+  dispatch: Dispatch<studentAction>;
+  id: number;
+}) {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div>
       <p>
         <span>{name}</span>
-        <button>삭제</button>
+        <button onClick={() => dispatch({ type: 'delete-student', payload: { id } })}>삭제</button>
       </p>
     </div>
   );
