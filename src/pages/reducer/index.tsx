@@ -6,7 +6,7 @@ type Tstudents = { id: number; name: string; isHere: boolean };
 
 type TinitalState = { count: number; students: Tstudents[] };
 
-type studentActionType = 'delete-student' | 'add-student';
+type studentActionType = 'delete-student' | 'add-student' | 'mark-student';
 
 export type studentAction = { type: studentActionType; payload: Partial<Tstudents> };
 
@@ -31,6 +31,18 @@ const reducer: Reducer<TinitalState, studentAction> = (state, action) => {
         students: state.students.filter((student) => student.id !== action.payload.id),
       };
     }
+
+    case 'mark-student':
+      return {
+        count: state.count,
+        students: state.students.map((student) => {
+          if (student.id === action.payload.id) {
+            return { ...student, isHere: !student.isHere };
+          }
+
+          return { ...student };
+        }),
+      };
     default:
       return state;
   }
@@ -57,7 +69,7 @@ function ReducerHard() {
       />
       <button onClick={() => dispatch({ type: 'add-student', payload: { name } })}>추가</button>
       {studentInfo.students.map((student) => {
-        return <Student dispatch={dispatch} name={student.name} id={student.id} key={student.id} />;
+        return <Student dispatch={dispatch} {...student} key={student.id} />;
       })}
     </div>
   );
