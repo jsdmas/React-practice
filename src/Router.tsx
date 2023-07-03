@@ -1,9 +1,10 @@
-import { Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import { PATH } from './constant/path';
-import Memo from './pages/memo';
-import Reducer from './pages/reducer';
+
+const Memo = lazy(() => import('./pages/memo/index'));
+const Reducer = lazy(() => import('./pages/reducer/index'));
 
 function Router() {
   return (
