@@ -36,6 +36,8 @@ eslint-plugin-simple-import-sort
 - eslint-plugin-react-hooks : React Hooks를 사용할 때 권장되는 규칙을 지정하고 정적 분석을 수행하는 플러그인입니다.
 - eslint-plugin-simple-import-sort : import 문을 정렬하여 가독성을 향상시키는 도구입니다. (모듈의 상대적인 경로나 패키지를 구분하여 정렬하는 기능을 제공)
 
+4. eslintrc 파일 설정 - 설치한 플러그인 패키지를 적용 + rules, 기타 등등 적용
+
 # useRducer
 
 ![](https://github.com/jsdmas/react-usereducer-useMemo-pracitce/assets/105098581/d2e46bec-dea6-4671-9e14-75b004293ac3)
