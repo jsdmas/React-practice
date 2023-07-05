@@ -55,3 +55,8 @@ Ref : [https://www.youtube.com/watch?v=tdORpiegLg0&t=1s](https://www.youtube.com
 # useMemo
 
 Ref : [https://www.youtube.com/watch?v=e-CnI8Q5RY4](https://www.youtube.com/watch?v=e-CnI8Q5RY4)
+
+# 블로그 정리
+1. [react의 렌더링에 대하여](https://jsdmas.github.io/react/React_Render/)
+2. [렌더링 최적화를 위한 hook](https://jsdmas.github.io/react/React_hook/)
+3. [useEffect, 의존성배열](https://jsdmas.github.io/react/React_useEffect/)
