@@ -7,7 +7,7 @@ function Header() {
     <header
       style={{
         display: 'flex',
-        width: '50vw',
+        width: '90vw',
         justifyContent: 'space-around',
       }}
     >
@@ -17,6 +17,7 @@ function Header() {
       <Link to={PATH.memo}>useMemo 활용</Link>
       <Link to={PATH.callback}>useCallBack 연습</Link>
       <Link to={PATH.componentMemo}>memo 연습</Link>
+      <Link to={PATH.FailComponentMemo}>잘못된 memo</Link>
     </header>
   );
 }

@@ -9,6 +9,7 @@ const BasicReducer = lazy(() => import('@/pages/reducerbasic/index'));
 const BasicMemo = lazy(() => import('@/pages/memobasic/index'));
 const CallBack = lazy(() => import('./pages/callback/index'));
 const ComponentMemo = lazy(() => import('./pages/componentMemo/index'));
+const FailComponentMemo = lazy(() => import('./pages/FailComponentMemo/index'));
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function Router() {
         <Route path={PATH.memoBasic} element={<BasicMemo />} />
         <Route path={PATH.callback} element={<CallBack />} />
         <Route path={PATH.componentMemo} element={<ComponentMemo />} />
+        <Route path={PATH.FailComponentMemo} element={<FailComponentMemo />} />
       </Routes>
     </Suspense>
   );

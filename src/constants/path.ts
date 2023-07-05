@@ -5,4 +5,5 @@ export const PATH = {
   memo: '/memo',
   callback: 'callback',
   componentMemo: 'componentmemo',
+  FailComponentMemo: 'failcomponentmemo',
 };
