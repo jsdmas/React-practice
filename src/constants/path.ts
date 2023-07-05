@@ -3,7 +3,6 @@ export const PATH = {
   reducer: '/reducer',
   memoBasic: '/memo/basic',
   memo: '/memo',
-  callback: 'callback',
   componentMemo: 'componentmemo',
   FailComponentMemo: 'failcomponentmemo',
 };
