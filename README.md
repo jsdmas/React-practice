@@ -60,3 +60,6 @@ Ref : [https://www.youtube.com/watch?v=e-CnI8Q5RY4](https://www.youtube.com/watc
 1. [react의 렌더링에 대하여](https://jsdmas.github.io/react/React_Render/)
 2. [렌더링 최적화를 위한 hook](https://jsdmas.github.io/react/React_hook/)
 3. [useEffect, 의존성배열](https://jsdmas.github.io/react/React_useEffect/)
+
+# 참고
+[https://goongoguma.github.io/2021/04/26/When-to-useMemo-and-useCallback/](https://goongoguma.github.io/2021/04/26/When-to-useMemo-and-useCallback/)
