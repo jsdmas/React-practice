@@ -10,6 +10,7 @@ type BankActionType = 'deposit' | 'withdraw';
 
 type BankAction = { type: BankActionType; payload: number };
 
+// https://www.stevy.dev/where-i-put-function-declare/
 const reducer: Reducer<number, BankAction> = (state, action) => {
   switch (action.type) {
     case 'deposit':
